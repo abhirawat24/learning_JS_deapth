@@ -55,3 +55,24 @@ console.log("Datatype of BigInt: " + typeof BigNum)  //number
 console.log("Datatype of Array: " + typeof names)  //object
 console.log("Datatype of Object: " + typeof firstObj)  //object
 console.log("Datatype of Function: " + typeof myFunction)  // function
+
+
+//*************************************************************
+
+//Stack (Primitive), Heap (Non Primitive)
+
+let fullName = "Abhishek Rawat"
+let anotherName = fullName
+anotherName = "Abhi"
+
+
+let userOne = {
+    email: "abc@xyz.com",
+    name: "abhi"
+}
+
+let userTwo = userOne
+userTwo.email = "abhi@gmail.com"
+
+console.log(userOne.email)
+console.log(userTwo.email)
